@@ -4,13 +4,13 @@ Starting from a throughful list of tickers, this code is able to retrieve the in
 In this repository we have a file called "download_stocks_etfs", we have a script that is already set to use the tickers from a file with all the denomination of Yahoo Tickers,
 abd retrieve the information (price, capitalization, P/E).
 Pay attention to the following: 
--All the stocks with .X are deleted
--The naan values are replaced with the first value occurring
--The stocks having no capitalization values registered are dropped
--The top 75% of stocks with capitalization are kept, while others are filtered out
--All the values of the stocks refers to a the close price
 - p/e ratio column refers primarly to the variable from yahoo finance called "TRailing PE", and when this occurs being missing, the variable is "Revenues per share"
-- -The output files are saved in a .parquet format
+- The output files are saved in a .parquet format
+- All the values of the stocks refers to a the close price
+- The top 75% of stocks with capitalization are kept, while others are filtered out
+- The stocks having no capitalization values registered are dropped
+- The naan values are replaced with the first value occurring
+- All the stocks with .X are deleted
 
 
 In the file gold digger, we have a tool that use the file of input with data of stocks in order to find the most performing stocks, according to a given timeframe, based
