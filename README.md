@@ -1,4 +1,5 @@
-# stock_data_downloader
+# FINANCE PROJECTS
+
 Starting from a throughful list of tickers, this code is able to retrieve the information about the stocks, such as price, capitalization, P/E since their inception
 
 In this repository we have a file called "download_stocks_etfs", we have a script that is already set to use the tickers from a file with all the denomination of Yahoo Tickers,
